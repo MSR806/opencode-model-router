@@ -2,23 +2,6 @@
   "name": "opencode-model-router",
   "version": "0.1.0",
   "description": "OpenCode plugin: prefix a message with @key to pick a model, strip the tag, and persist the choice for the session",
-  "type": "module",
-  "main": "./dist/index.js",
-  "types": "./dist/index.d.ts",
-  "exports": {
-    ".": {
-      "import": "./dist/index.js",
-      "types": "./dist/index.d.ts"
-    }
-  },
-  "files": [
-    "dist"
-  ],
-  "scripts": {
-    "build": "tsc -p tsconfig.json",
-    "test": "bun test",
-    "prepublishOnly": "bun run build"
-  },
   "keywords": [
     "opencode",
     "opencode-plugin",
@@ -27,22 +10,39 @@
     "router",
     "llm"
   ],
-  "author": "MSR806",
-  "license": "MIT",
+  "homepage": "https://github.com/MSR806/opencode-model-router#readme",
+  "bugs": {
+    "url": "https://github.com/MSR806/opencode-model-router/issues"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/MSR806/opencode-model-router.git"
   },
-  "bugs": {
-    "url": "https://github.com/MSR806/opencode-model-router/issues"
+  "license": "MIT",
+  "author": "MSR806",
+  "type": "module",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
   },
-  "homepage": "https://github.com/MSR806/opencode-model-router#readme",
-  "peerDependencies": {
-    "@opencode-ai/plugin": ">=0.15.0"
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "bun test",
+    "prepublishOnly": "bun run build"
   },
   "devDependencies": {
     "@opencode-ai/plugin": "^1.14.0",
     "@types/bun": "^1.2.0",
     "typescript": "^5.9.0"
+  },
+  "peerDependencies": {
+    "@opencode-ai/plugin": ">=0.15.0"
   }
 }
