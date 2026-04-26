@@ -21,13 +21,22 @@
   },
   "keywords": [
     "opencode",
+    "opencode-plugin",
     "plugin",
     "model",
     "router",
     "llm"
   ],
-  "author": "",
+  "author": "MSR806",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MSR806/opencode-model-router.git"
+  },
+  "bugs": {
+    "url": "https://github.com/MSR806/opencode-model-router/issues"
+  },
+  "homepage": "https://github.com/MSR806/opencode-model-router#readme",
   "peerDependencies": {
     "@opencode-ai/plugin": ">=0.15.0"
   },
