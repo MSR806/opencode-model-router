@@ -1,0 +1,39 @@
+{
+  "name": "opencode-model-router",
+  "version": "0.1.0",
+  "description": "OpenCode plugin: prefix a message with @key to pick a model, strip the tag, and persist the choice for the session",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "bun test",
+    "prepublishOnly": "bun run build"
+  },
+  "keywords": [
+    "opencode",
+    "plugin",
+    "model",
+    "router",
+    "llm"
+  ],
+  "author": "",
+  "license": "MIT",
+  "peerDependencies": {
+    "@opencode-ai/plugin": ">=0.15.0"
+  },
+  "devDependencies": {
+    "@opencode-ai/plugin": "^1.14.0",
+    "@types/bun": "^1.2.0",
+    "typescript": "^5.9.0"
+  }
+}
